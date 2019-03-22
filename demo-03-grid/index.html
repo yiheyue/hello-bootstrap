@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bootstrap 栅格系统</title>
+  <!-- favicon -->
+  <link href="../assets/favicon.ico" rel="icon">
+  <!-- Bootstrap CSS -->
+  <link href="../lib/bootstrap.min.css" rel="stylesheet">
+  <!-- 本页 CSS -->
+  <link href="index.css" rel="stylesheet">
+</head>
+<body>
+  <div class="container">
+    <div class="page-header">
+      <h1>Bootstrap 栅格系统</h1>
+      <p class="lead">通过下列的例子来熟悉 Bootstrap 的栅格系统。</p>
+    </div>
+
+    <h3>三列等宽布局</h3>
+    <p><strong>在桌面端</strong>使用三列等宽布局，这种布局方式将在手机上显示成垂直方向的三行。</p>
+    <div class="row">
+      <div class="col-md-4">.col-md-4</div>
+      <div class="col-md-4">.col-md-4</div>
+      <div class="col-md-4">.col-md-4</div>
+    </div>
+
+    <h3>三列非等宽布局</h3>
+    <p><strong>在桌面端</strong>使用三列非等宽布局，列的数字相加起来应该等于十二。</p>
+    <div class="row">
+      <div class="col-md-3">.col-md-3</div>
+      <div class="col-md-6">.col-md-6</div>
+      <div class="col-md-3">.col-md-3</div>
+    </div>
+
+    <h3>两列非等宽布局</h3>
+    <p><strong>在桌面端</strong>使用两列非等宽布局。</p>
+    <div class="row">
+      <div class="col-md-8">.col-md-8</div>
+      <div class="col-md-4">.col-md-4</div>
+    </div>
+
+    <h3>全宽单列布局</h3>
+    <p class="text-warning">大部分情况下，我们不需要使用全宽单列布局。</p>
+    <div class="row">
+      <div class="col-md-12">.col-md-12</div>
+    </div>
+
+    <h3>嵌套布局</h3>
+    <p><strong>在桌面端</strong>使用嵌套布局。</p>
+    <div class="row">
+      <div class="col-md-8">
+        .col-md-8
+        <div class="row">
+          <div class="col-md-6">.col-md-6</div>
+          <div class="col-md-6">.col-md-6</div>
+        </div>
+      </div>
+      <div class="col-md-4">.col-md-4</div>
+    </div>
+
+    <hr>
+
+    <h3>混合：桌面端和手机端</h3>
+    <p>Bootstrap 3 的栅格系统有四种类型：手机端（xs），平板端（sm），桌面端（md）和高分辨率桌面端（lg）。我们可以将这些类型混合起来使用。</p>
+    <div class="row">
+      <div class="col-xs-12 col-md-8">.col-xs-12 .col-md-8</div>
+      <div class="col-xs-6 col-md-4">.col-xs-6 .col-md-4</div>
+    </div>
+    <div class="row">
+      <div class="col-xs-6 col-md-4">.col-xs-6 .col-md-4</div>
+      <div class="col-xs-6 col-md-4">.col-xs-6 .col-md-4</div>
+      <div class="col-xs-6 col-md-4">.col-xs-6 .col-md-4</div>
+    </div>
+    <div class="row">
+      <div class="col-xs-6">.col-xs-6</div>
+      <div class="col-xs-6">.col-xs-6</div>
+    </div>
+
+    <hr>
+
+    <h3>混合：桌面端、平板端和手机端</h3>
+    <div class="row">
+      <div class="col-xs-12 col-sm-6 col-lg-8">.col-xs-12 .col-sm-6 .col-lg-8</div>
+      <div class="col-sm-6 col-lg-4">.col-sm-6 .col-lg-4</div>
+    </div>
+    <div class="row">
+      <div class="col-xs-6 col-sm-4">.col-xs-6 .col-sm-4</div>
+      <div class="col-xs-6 col-sm-4">.col-xs-6 .col-sm-4</div>
+      <div class="col-xs-6 col-sm-4">.col-xs-6 .col-sm-4</div>
+    </div>
+
+    <h3>清除浮动</h3>
+    <p>清除浮动</p>
+    <div class="row">
+      <div class="col-xs-6 col-sm-3">
+        .col-xs-6 .col-sm-3
+        <br>
+        改变浏览器窗口的大小，或者在手机上查看该页面。
+      </div>
+      <div class="col-xs-6 col-sm-3">.col-xs-6 .col-sm-3</div>
+
+      <div class="clearfix visible-xs"></div>
+      
+      <div class="col-xs-6 col-sm-3">.col-xs-6 .col-sm-3</div>
+      <div class="col-xs-6 col-sm-3">.col-xs-6 .col-sm-3</div>
+    </div>
+
+    <h3>偏移</h3>
+    <p>偏移</p>
+    <div class="row">
+      <div class="col-sm-5 col-md-6">.col-sm-5 .col-md-6</div>
+      <div class="col-sm-5 col-md-6 col-sm-offset-2 col-md-offset-0">.col-sm-5 .col-md-6</div>
+    </div>
+    <div class="row">
+      <div class="col-sm-6 col-md-5 col-lg-6">.col-sm-6 .col-md-5 .col-lg-6</div>
+      <div class="col-sm-6 col-md-5 col-lg-6 col-md-offset-2 col-lg-offset-0">.col-sm-6 .col-md-5 .col-lg-6</div>
+    </div>
+  </div>
+  
+  <!-- jQuery -->
+  <script src="../lib/jquery.min.js"></script>
+  <!-- Bootstrap JS -->
+  <script src="../lib/bootstrap.min.js"></script>
+</body>
+</html>
